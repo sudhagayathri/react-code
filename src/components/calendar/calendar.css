@@ -1,0 +1,99 @@
+.flex{
+    display:flex;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    justify-content: space-evenly;
+}
+.month-year{
+    font-size:18px;
+    font-weight:bold;
+}
+.calendar-holder{
+    width:380px;
+    margin:auto;
+    text-align: center;
+    border: 2px solid transparent;
+    box-shadow: 0px 2px 2px 2px #b8b0b0;
+    min-height: 345px;
+    padding: 0 15px;
+}
+.calendar-label {
+    margin-left: 7px;
+    cursor: pointer;
+}
+.calendar-day{
+    font-weight:bold;
+    width:inherit;
+    border-collapse: collapse;
+}
+.calendar-date, .calendar-month{
+    cursor: pointer;    
+}
+.calendar-date > span{
+    padding: 13px;
+    height: 20px;
+    display: block;
+    width: 15px;
+}
+.calendar-date > span{
+    position: relative;
+}
+.calendar-month{
+    width:100%;
+}
+.calendar-date.today > span{
+    border: 1px solid #ECEDF1;
+    background-color: #ECEDF1;
+    border-radius: 50%;
+}
+.calendar-date:hover > span{
+    border:1px solid blue;
+    border-radius:50%;
+}
+.calendar-date.today > span:after, .calendar-date > span.activity:after{
+    position: absolute;
+    content: "";
+    top: 1px;
+    right: 4px;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+}
+.calendar-day thead tr, .calendar-month thead tr{
+    font-size: 13px;
+    color: #d2d3d5;
+    font-family: monospace;
+    border-bottom: 2px solid #d2d3d5;
+}
+.calendar-day thead tr th{
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.calendar-day tbody tr{
+    font-size: 15px;
+    color: #111111;
+}
+.calendar-month-row {
+    padding: 13px;
+    height: 20px;
+    width: 15px;
+    font-size: 15px;
+    color: #111111;
+    font-weight: bold;
+}
+.calendar-button{
+    width: 7px;
+    height: 7px;
+    background-color: transparent;
+    border: 3px solid black;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(225deg);
+    cursor: pointer;
+    position: relative;
+    top:7px;
+}
+.calendar-button.button-next{
+    transform: rotate(45deg);
+}
