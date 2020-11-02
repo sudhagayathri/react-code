@@ -1,6 +1,6 @@
 import React from "react";
 import moment from "moment";
-import './calendar.css'
+import './calendar.css';
 
 export default class Calendar extends React.Component{
     state = {
